@@ -4,11 +4,42 @@
 #define ALIVE 1
 #define MAXROW 20
 #define MAXCOL 20
-#define ORIGINAL_LIVES 50//初始化的生命数
+#define ORIGINAL_LIVES 200//初始化的生命数
 
 char newMap[MAXROW][MAXCOL];
 
 void initEnv()//环境初始化
+{
+    int row,col;
+    
+    for(row = 0; row < MAXROW; row++)
+        for(col = 0; col < MAXCOL; col++)
+        {
+            newMap[row][col] = DEAD;//一开始都处于死亡状态
+        }
+    
+    puts("Game of Life Simulation");//使用puts可以自动换行
+    
+    int j = 0;
+    while(j < ORIGINAL_LIVES)
+    {
+        row = rand()%MAXROW;//随机产生一个0 到 MAXROW-1 之间的数
+        col = rand()%MAXCOL;
+        if( (row >= 0) && (row < MAXROW) && (col >= 0) && (col < MAXCOL) )
+        {
+            newMap[row][col] = ALIVE;
+        }
+        else if( (row < 0) | (col < 0))
+            break;
+        else
+            printf("(x,y) exceeds map range");
+        
+        j++;
+        
+    }
+    
+}
+void initEnv2()//环境初始化
 {
     int row,col;
     

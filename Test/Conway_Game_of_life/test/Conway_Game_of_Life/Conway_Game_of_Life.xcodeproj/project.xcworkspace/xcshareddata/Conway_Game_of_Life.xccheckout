@@ -14,11 +14,11 @@
 		<string>github.com:jessehui/Tools.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Test/test/Conway_Game_of_Life/Conway_Game_of_Life.xcodeproj/project.xcworkspace</string>
+	<string>Test/Conway_Game_of_life/test/Conway_Game_of_Life/Conway_Game_of_Life.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2DF78CB22B49959B2B7F88BBA8FE0F7B3D47532A</key>
-		<string>../../../../..</string>
+		<string>../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:jessehui/Tools.git</string>
